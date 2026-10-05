@@ -1,0 +1,20 @@
+{
+	"inputs": [
+		{
+			"id": "ado_pat_b64",
+			"type": "promptString",
+			"description": "Base64-encoded <email>:<Azure DevOps PAT>",
+			"password": true
+		}
+	],
+	"servers": {
+		"playwright": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@playwright/mcp@latest"
+			]
+		}
+	}
+}
